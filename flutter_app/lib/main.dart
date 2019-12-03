@@ -22,29 +22,44 @@ class MyApp extends StatelessWidget {
             //mainAxisSize: MainAxisSize.min, //as per child widget
             //verticalDirection: VerticalDirection.up, //1,2,3 or 3,2,1
             //mainAxisAlignment: MainAxisAlignment.start, //place at top(start), botton(end), center (if not min in MainAxisSize)
-            //mainAxisAlignment: MainAxisAlignment.spaceBetween, //stretch (spaceEvenly, spaceBetween
+            mainAxisAlignment: MainAxisAlignment.spaceBetween, //stretch (spaceEvenly, spaceBetween
             crossAxisAlignment: CrossAxisAlignment.stretch, //like above in horizontel way
 
             children: <Widget>[
               Container(
                 //height: 100.0,
-                //width: 100.0,
-                color: Colors.white,
+                width: 100.0,
+                color: Colors.red,
                 child: Text("Container 1"),
               ),
-              SizedBox(
+              /*SizedBox(
                 height: 20.0,
+              ),*/
+              Container(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Container(
+                      width:100.0,
+                      height: 100.0,
+                      color: Colors.yellow
+                    ),
+                    Container(
+                      width: 100.0,
+                      height: 100.0,
+                      color: Colors.green,
+                    )
+                  ],
+                ),
+                /*height: 100.0,
+                width: 100.0,
+                color: Colors.white,
+                child: Text("Container 2"),*/
               ),
               Container(
                 //height: 100.0,
-                //width: 100.0,
+                width: 100.0,
                 color: Colors.lightBlue,
-                child: Text("Container 2"),
-              ),
-              Container(
-                //height: 100.0,
-                //width: 100.0,
-                color: Colors.red,
                 child: Text("Container 3"),
               ),
 
